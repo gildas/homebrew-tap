@@ -11,7 +11,7 @@ class BitbucketCli < Formula
   def install
     ENV["CGO_ENABLED"] = "0"
     system "go", "build", *std_go_args(output: bin/"bb", ldflags: "-s -w")
-    generate_completions_from_executable(bin/"bb", "completion", shells: [:bash, :zsh])
+    generate_completions_from_executable(bin/"bb", "completion", base_name: "bb")
   end
 
   test do
