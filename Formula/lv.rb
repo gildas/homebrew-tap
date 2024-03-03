@@ -1,4 +1,4 @@
-class LV < Formula
+class Lv < Formula
   desc "Log viewer"
   homepage "https://github.com/gildas/lv"
   url "https://github.com/gildas/lv/archive/refs/tags/v0.1.0.zip"
