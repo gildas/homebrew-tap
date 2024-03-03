@@ -11,7 +11,7 @@ class Lv < Formula
   def install
     ENV["CGO_ENABLED"] = "0"
     system "go", "build", *std_go_args(output: bin/"lv", ldflags: "-s -w")
-    generate_completions_from_executable(bin/"lv", "completion", base_name: "lv")
+    generate_completions_from_executable(bin/"lv", "--completion", base_name: "lv")
   end
 
   test do
