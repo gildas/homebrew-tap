@@ -3,7 +3,7 @@ class Lv < Formula
   homepage "https://github.com/gildas/lv"
   url "https://github.com/gildas/lv/archive/refs/tags/v0.1.3.zip"
   version "0.1.3"
-  sha256 "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  sha256 "57c2f0a55dd56434ef0df95f9aed215b036f8eb74253b7c81aacc578c81f604a"
   license "MIT"
 
   depends_on "go" => :build
