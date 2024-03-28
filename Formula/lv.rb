@@ -1,9 +1,9 @@
 class Lv < Formula
   desc "Log viewer"
   homepage "https://github.com/gildas/lv"
-  url "https://github.com/gildas/lv/archive/refs/tags/v0.1.3.zip"
-  version "0.1.3"
-  sha256 "57c2f0a55dd56434ef0df95f9aed215b036f8eb74253b7c81aacc578c81f604a"
+  url "https://github.com/gildas/lv/archive/refs/tags/v0.2.0.zip"
+  version "0.2.0"
+  sha256 "447121112e9b1620e69f1b570f506c93744f113e532653300b5c2a228481dbf6"
   license "MIT"
 
   depends_on "go" => :build
