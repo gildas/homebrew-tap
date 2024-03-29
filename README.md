@@ -32,6 +32,11 @@ brew tap gildas/tap
 
 The tap contains the following packages:
 
-```sh
-brew install gildas/tap/bitbucket-cli
-```
+- [bitbucket-cli](Formula/bitbucket-cli.rb)
+  ```sh
+  brew install gildas/tap/bitbucket-cli
+  ```
+- [lv](Formula/lv.rb)
+  ```sh
+  brew install gildas/tap/lv
+  ```
