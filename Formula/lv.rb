@@ -2,7 +2,7 @@ class Lv < Formula
   desc "Log viewer"
   homepage "https://github.com/gildas/lv"
   url "https://github.com/gildas/lv/archive/refs/tags/v0.3.0.zip"
-  version "0.3.0"
+  version "0.3.1"
   sha256 "05a6fe2a92a8ec5537b08832536821fec2fe0fc2ec4ae7efce9b35652faf5592"
   license "MIT"
 
