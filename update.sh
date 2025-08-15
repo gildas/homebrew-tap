@@ -8,6 +8,7 @@ for formula in Formula/*.rb; do
   checksum=$(cat $formula | sed -Ene 's/^\s*sha256\s+"(.*)"/\1/p')
   source="$GOPATH/src/$(sed -e 's/https:\/\///' <<<"$homepage")"
   echo "  Current Version: $version, URL: $url"
+  echo "  Source: $source"
   if [[ -d $source/.git ]]; then
     new_version=$(git -C $source tag --list | sort --version-sort | tail -1 | sed -e 's/v//')
     if [[ $new_version != $version ]]; then
@@ -15,7 +16,7 @@ for formula in Formula/*.rb; do
       sed -Ei "/^\s*version/s/\".*\"/\"$new_version\"/" $formula
       version=$new_version
     fi
-    new_url="${homepage}/get/$(git -C $source rev-list -n 1 v$new_version).tar.gz"
+    new_url="${homepage}/archive/refs/tags/v${new_version}.zip"
     if [[ $new_url != $url ]]; then
       echo "  URL has changed: $new_url"
       sed -Ei "/^\s*url/s/\".*\"/\"${new_url//\//\\/}\"/" $formula
@@ -27,4 +28,5 @@ for formula in Formula/*.rb; do
     echo "Checksum does not match, updating"
     sed -Ei "/^\s*sha256/s/\".*\"/\"$new_checksum\"/" $formula
   fi
+  echo "  Checksum: $new_checksum"
 done
