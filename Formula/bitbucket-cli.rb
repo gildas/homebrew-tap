@@ -1,9 +1,9 @@
 class BitbucketCli < Formula
   desc "Bitbucket command-line tool"
   homepage "https://github.com/gildas/bitbucket-cli"
-  url "https://github.com/gildas/bitbucket-cli/archive/refs/tags/v0.17.6.zip"
-  version "0.17.6"
-  sha256 "f79e42db473a2b46df8ad85c4803f2c62c07de0071fd4e66a8c0baa4d8cd0bcd"
+  url "https://github.com/gildas/bitbucket-cli/archive/refs/tags/v0.17.7.zip"
+  version "0.17.7"
+  sha256 "7870d205909a7801385092edd83127d418a4d0b1c032df2ce01c7aa6d4aa081e"
   license "MIT"
 
   depends_on "go" => :build
