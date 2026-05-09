@@ -3,7 +3,7 @@ class GitCredentialBitbucket < Formula
   homepage "https://github.com/gildas/git-credential-bitbucket"
   url "https://github.com/gildas/git-credential-bitbucket/archive/refs/tags/v1.1.0.zip"
   version "1.1.0"
-  sha256 "b83cce2e7e01b0dc5b9a406335b0838341778fbacf537dbd68ac09a49229c378"
+  sha256 "4f21f6239b44841abe830ec1c9b4db2d2a2b9ab4af02d6b9a233bdb0fb2bda88"
   license "MIT"
 
   depends_on "go" => :build
