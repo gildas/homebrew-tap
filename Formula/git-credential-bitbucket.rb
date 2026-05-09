@@ -1,4 +1,4 @@
-class BitbucketCli < Formula
+class GitCredentialBitbucket < Formula
   desc "Git credential helper for Bitbucket"
   homepage "https://github.com/gildas/git-credential-bitbucket"
   url "https://github.com/gildas/git-credential-bitbucket/archive/refs/tags/v1.1.0.zip"
