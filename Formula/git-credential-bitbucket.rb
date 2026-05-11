@@ -1,9 +1,9 @@
 class GitCredentialBitbucket < Formula
   desc "Git credential helper for Bitbucket"
   homepage "https://github.com/gildas/git-credential-bitbucket"
-  url "https://github.com/gildas/git-credential-bitbucket/archive/refs/tags/v1.1.0.zip"
-  version "1.1.0"
-  sha256 "4f21f6239b44841abe830ec1c9b4db2d2a2b9ab4af02d6b9a233bdb0fb2bda88"
+  url "https://github.com/gildas/git-credential-bitbucket/archive/refs/tags/v1.1.1.zip"
+  version "1.1.1"
+  sha256 "027faa81e6d4f53203a9c65a3432293db659213f5d65442248a67c1bd021d266"
   license "MIT"
 
   depends_on "go" => :build
