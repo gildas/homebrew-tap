@@ -36,6 +36,10 @@ The tap contains the following packages:
   ```sh
   brew install gildas/tap/bitbucket-cli
   ```
+- [gitflow-hooks](Formula/gitflow-hooks.rb)
+  ```sh
+  brew install gildas/tap/gitflow-hooks
+  ```
 - [lv](Formula/lv.rb)
   ```sh
   brew install gildas/tap/lv
