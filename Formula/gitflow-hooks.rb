@@ -1,5 +1,5 @@
 class GitflowHooks < Formula
-  desc "Git flow (AVH edition) hooks for versions, pull requests, formatting and linting"
+  desc "Git flow hooks for versions, pull requests, formatting and linting"
   homepage "https://github.com/gildas/gitflow-hooks"
   url "https://github.com/gildas/gitflow-hooks/archive/refs/tags/v1.4.0.zip"
   version "1.4.0"
@@ -7,6 +7,7 @@ class GitflowHooks < Formula
   license "MIT"
 
   depends_on "rust" => :build
+  depends_on "git-flow-next"
 
   def install
     system "cargo", "install", *std_cargo_args
@@ -14,10 +15,7 @@ class GitflowHooks < Formula
 
   def caveats
     <<~EOS
-      The hooks only work with git flow AVH edition, which is not in Homebrew anymore.
-      See https://github.com/petervanderdoes/gitflow-avh/wiki/Installation
-
-      Then inject the hooks in a repository with:
+      Inject the hooks in a repository with:
         hook-it /path/to/repo
     EOS
   end
