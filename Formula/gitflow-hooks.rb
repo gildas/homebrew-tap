@@ -1,9 +1,9 @@
 class GitflowHooks < Formula
   desc "Git flow hooks for versions, pull requests, formatting and linting"
   homepage "https://github.com/gildas/gitflow-hooks"
-  url "https://github.com/gildas/gitflow-hooks/archive/refs/tags/v1.4.2.zip"
-  version "1.4.2"
-  sha256 "eed98f9e15a2135e54ccb48ddc9b819eb04f57519cb4561e4e94754682da3955"
+  url "https://github.com/gildas/gitflow-hooks/archive/refs/tags/v1.5.0.zip"
+  version "1.5.0"
+  sha256 "8b35f18cf8e6f961f6327c6f603304740460b18c42e217dd97b441bf1d87df56"
   license "MIT"
 
   depends_on "rust" => :build
